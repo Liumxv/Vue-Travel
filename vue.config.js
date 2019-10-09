@@ -1,22 +1,13 @@
-// vue.config.js
-// const path = require('path')
-// module.exports = {
-//   publicPath: './',
-//   configureWebpack: (config) => {
-//     if (process.env.NODE_ENV === 'production') {
-//       // 为生产环境修改配置...
-//       config.mode = 'production'
-//     } else {
-//       // 为开发环境修改配置...
-//       config.mode = 'development'
-//     }
-//     resolve: {
-//       alias: {
-        
-//       } // 别名配置
-//     }
-//   }
-// }
+const path = require('path')
+const appData = require('./data.json')
+const index = appData.index
+const city = appData.city
+const detail = appData.detail
+
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
   configureWebpack: {
     resolve: {
@@ -25,4 +16,14 @@ module.exports = {
       }
     }
   },
+  devServer: {
+    before (app, server) {
+      app.get('/api/index', (req, res) => {
+        res.json({
+          errno: 0,
+          data: index
+        })
+      })
+    }
+  }
 }

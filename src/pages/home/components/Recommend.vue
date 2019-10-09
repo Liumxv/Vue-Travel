@@ -17,30 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg',
-        title: '奥林匹克塔',
-        desc: '敢与森林之王近距离接触吗？'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg',
-        title: '奥林匹克塔',
-        desc: '敢与森林之王近距离接触吗？'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg',
-        title: '奥林匹克塔',
-        desc: '敢与森林之王近距离接触吗？'
-      }, {
-        id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/1a/1a48cc20b0d6ed44a3.img.jpg_200x200_32e22bed.jpg',
-        title: '奥林匹克塔',
-        desc: '敢与森林之王近距离接触吗？'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
