@@ -25,7 +25,8 @@ export default {
     handleBackClick () {
       this.$router.go(-1)
     },
-    handleScroll (e) {
+    handleScroll () {
+      console.log('scroll')
       const top = document.documentElement.scrollTop
       if (top > 60 && top < 140) {
         const opacity = top / 140
@@ -35,13 +36,16 @@ export default {
         this.showAbs = false
       } else if (top > 140) {
         this.showAbs = false
-      }else {
+      } else {
         this.showAbs = true
       }
     }
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 }
 </script>
