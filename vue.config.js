@@ -30,6 +30,12 @@ module.exports = {
           errno: 0,
           data: city
         })
+      }),
+      app.get('/api/detail', (req, res) => {
+        res.json({
+          errno: 0,
+          data: detail
+        })
       })
     }
   }

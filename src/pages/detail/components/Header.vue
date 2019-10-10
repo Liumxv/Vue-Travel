@@ -29,8 +29,10 @@ export default {
       console.log('scroll')
       const top = document.documentElement.scrollTop
       if (top > 60) {
-        const opacity = top / 140
-        opacity > 1 ? 1 : opacity
+        var opacity = top / 140
+        if (opacity > 1) {
+          opacity = 1
+        }
         this.opacityStyle = {
           opacity
         }
