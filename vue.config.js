@@ -12,7 +12,8 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        'styles': '@/assets/styles'
+        'styles': '@/assets/styles',
+        'common': '@/common'
       }
     }
   },
