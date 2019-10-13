@@ -30,6 +30,9 @@ export default {
   mounted () {
     this.getDetailInfo()
   },
+  activated () {
+    this.getDetailInfo()
+  },
   methods: {
     getDetailInfo () {
       axios.get('/api/detail', {

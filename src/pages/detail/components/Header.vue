@@ -30,9 +30,9 @@ export default {
       const top = document.documentElement.scrollTop
       if (top > 60) {
         var opacity = top / 140
-        if (opacity > 1) {
-          opacity = 1
-        }
+        // if (opacity > 1) {
+        //   opacity = 1
+        // }
         this.opacityStyle = {
           opacity
         }

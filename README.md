@@ -1,29 +1,16 @@
-# travel
+# Vue仿写去哪儿网
 
-## Project setup
-```
-npm install
-```
+去哪儿网的项目地址 [link](http://piao.qunar.com/touch/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+##### 项目介绍
 
-### Compiles and minifies for production
-```
-npm run build
-```
+* Vue2.6.10
+* axios
+* vuex
+* vue-router
 
-### Run your tests
-```
-npm run test
-```
+#### 项目截图
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![](https://raw.githubusercontent.com/Liumxv/ImageHosting/master/travel/IMG_6692.ul09jwpz14.PNG)
+![](https://raw.githubusercontent.com/Liumxv/ImageHosting/master/travel/IMG_6693.qcg5m9v99i.PNG)
+![](https://raw.githubusercontent.com/Liumxv/ImageHosting/master/travel/IMG_6695.znf9f3j46t.PNG)
